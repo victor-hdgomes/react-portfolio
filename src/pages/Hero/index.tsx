@@ -11,8 +11,16 @@ export const Hero = () => {
                 <div className="flex flex-col items-center justify-center text-center z-10">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8 }}
+                        animate={{
+                            opacity: 1,
+                            scale: 1,
+                            y: [0, 15, 0],
+                        }}
+                        transition={{
+                            opacity: { duration: 0.8, delay: 0.5 },
+                            scale: { duration: 0.8, delay: 0.5 },
+                            y: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
+                        }}
                         className="relative mb-8 mt-24"
                     >
                         <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-full blur-3xl"></div>
@@ -22,7 +30,7 @@ export const Hero = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.8, delay: .7  }}
                         className="max-w-2xl"
                     >
                         <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4">
@@ -60,7 +68,7 @@ export const Hero = () => {
                         repeat: Infinity,
                         ease: 'easeInOut'
                     }}
-                    className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl"
+                    className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"
                 />
             </div>
         </div>
