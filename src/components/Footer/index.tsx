@@ -2,6 +2,8 @@ import React from "react"
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
 
 export const Footer = () => {
+    const year = new Date().getFullYear();
+
     return (
         <footer className="py-8" id="contact">
             <div className="max-w-[1200px] mx-auto px-4">
@@ -45,7 +47,7 @@ export const Footer = () => {
 
                 <div className="relative mt-12 container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
                     <p className="text-gray-200 caption text-n-4 lg-block">
-                        &copy; 2025. All rights reserved.
+                        &copy; {year}. All rights reserved.
                     </p>
 
                     <ul className="flex gap-5 flex-wrap">
