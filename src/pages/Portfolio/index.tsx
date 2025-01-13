@@ -52,7 +52,7 @@ export const Portfolio = () => {
                                         animate={{ height: 'auto', opacity: 1 }}
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: .3 }}
-                                        className="px-6 pb-6 bg-black/20 border border-white/10"
+                                        className="p-6 bg-black/20 border border-white/10"
                                     >
                                         <div className="flex flex-col md:flex-row gap-8">
                                             <img src={project.src} alt={project.title} className="w-full md:w-1/2 h-64 object-cover rounded-lg" />

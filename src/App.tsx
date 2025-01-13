@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Hero, Portfolio } from './pages';
+import { About, Hero, Portfolio, Stack } from './pages';
 
 export default function App() {
   return (
@@ -7,6 +7,7 @@ export default function App() {
       <Hero />
       <About />
       <Portfolio />
+      <Stack />
     </>
   )
 }
