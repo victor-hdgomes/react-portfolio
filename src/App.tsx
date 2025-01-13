@@ -1,5 +1,6 @@
 import React from 'react';
 import { About, Hero, Portfolio, Stack } from './pages';
+import { Footer } from './components';
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <About />
       <Portfolio />
       <Stack />
+      <Footer />
     </>
   )
 }
