@@ -1,6 +1,6 @@
 import React from "react"
 import { motion } from 'framer-motion';
-import project1 from '../../assets/images/projects/proj5.png';
+import project1 from '../../assets/images/projects/fizzi.png';
 
 export const About = () => {
     return (

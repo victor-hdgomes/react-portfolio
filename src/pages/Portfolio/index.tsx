@@ -63,10 +63,10 @@ export const Portfolio = () => {
                                                 <p className="text-emerald-400/60 font-medium mb-4 capitalize">Type: {project.type}</p>
 
                                                 <div className="flex justify-start items-center space-x-4">
-                                                    <a href={project.link} className="text-emerald-400 hover:text-blue-300 transition-colors">
+                                                    <a target="_blank" href={project.link} className="text-emerald-400 hover:text-blue-300 transition-colors">
                                                         <HiOutlineExternalLink />
                                                     </a>
-                                                    <a href={project.link} className="text-emerald-400 hover:text-blue-300 transition-colors">
+                                                    <a target="_blank" href={project.link} className="text-emerald-400 hover:text-blue-300 transition-colors">
                                                         <FaGithub />
                                                     </a>
                                                 </div>
