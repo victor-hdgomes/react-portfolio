@@ -3,6 +3,17 @@ import { motion } from 'framer-motion'
 import profilepic from '../../assets/images/profilepic.png';
 
 export const Hero = () => {
+    const onContactMe = () => {
+        window.open("https://www.linkedin.com/in/victor-hdgomes/", "_blank");
+    }
+
+    const onViewWork = () => {
+        const portfolioSection = document.querySelector("#portfolio");
+        if (portfolioSection) {
+            portfolioSection.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
     return (
         <div className="relative overflow-clip min-h-screen text-white bg-gradient-to-b from-black via-green-900/75 to-green-400">
             <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,_#000_90%,_#249974)] top-[450px] border-[1px] border-[#8cd6de]/30" />
@@ -30,7 +41,7 @@ export const Hero = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: .7  }}
+                        transition={{ duration: 0.8, delay: .7 }}
                         className="max-w-2xl"
                     >
                         <h1 className="text-6xl md:text-7xl font-bold tracking-tighter mb-4">
@@ -43,6 +54,7 @@ export const Hero = () => {
 
                         <div className="flex gap-4 justify-center">
                             <motion.button
+                                onClick={onContactMe}
                                 whileHover={{ scale: 1.05 }}
                                 className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 transition-colors"
                             >
@@ -50,6 +62,7 @@ export const Hero = () => {
                             </motion.button>
 
                             <motion.button
+                                onClick={onViewWork}
                                 whileHover={{ scale: 1.05 }}
                                 className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors"
                             >

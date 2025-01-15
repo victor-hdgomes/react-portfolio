@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <footer className="py-8" id="contact">
             <div className="max-w-[1200px] mx-auto px-4">
-                <div className="flex items-center justify-between flex-col md:flex-row">
+                <div className="flex items-center justify-between flex-col lg:flex-row text-center lg:text-left">
                     <div>
                         <h2 className="md:text-7xl text-4xl font-bold mb-10 text-white/50">
                             Get in <span className="text-gray-400">touch</span>
@@ -22,7 +22,7 @@ export const Footer = () => {
                         <div className="mb-8">
                             <p className="text-lg mb-1">Phone</p>
 
-                            <a href="+5561991664479" className="text-2xl font-semibold underline decoration-gray-400 decoration-2 underline-offset-4 hover:decoration-gray-400 transition duration-300">
+                            <a target="_blank" href="https://wa.me/+5561991664479" className="text-2xl font-semibold underline decoration-gray-400 decoration-2 underline-offset-4 hover:decoration-gray-400 transition duration-300">
                                 +55 (61) 9 9166-4479
                             </a>
                         </div>
@@ -40,7 +40,7 @@ export const Footer = () => {
                         VICTOR HUGO
                     </h1>
 
-                    <h1 className="md:hidden relative text-9xl md:text-[12rem] lg:text[15rem] font-bold text-white opacity-10">
+                    <h1 className="md:hidden relative text-[5rem] md:text-[7rem] lg:text[10rem] font-bold text-white opacity-10">
                         VICTOR <br /> HUGO
                     </h1>
                 </div>

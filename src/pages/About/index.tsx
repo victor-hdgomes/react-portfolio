@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { motion } from 'framer-motion';
 import project1 from '../../assets/images/projects/fizzi.png';
 
@@ -12,8 +12,8 @@ export const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <motion.div
                     className="border border-white/20 rounded-lg p-6"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
@@ -46,9 +46,9 @@ export const About = () => {
 
                 <motion.div
                     className="border border-white/20 rounded-lg p-6"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
                     viewport={{ once: true }}
                 >
                     <h3 className="text-2xl font-bold mb-2">02. Expertise</h3>
@@ -70,9 +70,9 @@ export const About = () => {
 
                 <motion.div
                     className="border border-white/20 rounded-lg p-6"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.5 }}
                     viewport={{ once: true }}
                 >
                     <h3 className="text-2xl font-bold mb-2">03. Skills</h3>
@@ -111,9 +111,9 @@ export const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 <motion.div
                     className="border border-white/20 rounded-lg p-6"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
                     viewport={{ once: true }}
                 >
                     <h3 className="text-2xl font-bold mb-2">04. Approach</h3>
@@ -170,9 +170,9 @@ export const About = () => {
 
                 <motion.div
                     className="border border-white/20 rounded-lg p-6 flex flex-col justify-between"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2 }}
                     viewport={{ once: true }}
                 >
                     <div className="mb-4">
